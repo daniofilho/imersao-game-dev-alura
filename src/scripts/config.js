@@ -3,7 +3,7 @@ var p5Vars = {};
 var gameConfig = {
   fps: 30,
   speed: 5,
-  sound: false,
+  sound: true,
 };
 
 var scenario = {
