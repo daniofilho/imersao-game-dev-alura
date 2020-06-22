@@ -9,20 +9,21 @@ var gameConfig = {
 var scenario = {
   imageFile: 'assets/imagens/cenario/floresta.png',
   soundFile: 'assets/sons/trilha_jogo.mp3',
-  instance: null,
+  instance: null, // will store scenario instance
 };
 
+const playerHeight = 135;
 var player = {
   imageFile: 'assets/imagens/personagem/correndo.png',
   imageFileWidth: 880,
   imageFileHeight: 1080,
-  x: 0,
-  y: document.body.scrollHeight - 135,
+  x: 20,
+  y: document.body.scrollHeight - playerHeight - 20, // 20 = padding
   width: 110,
-  height: 135,
-  spriteX0: 0, // coordenada inicial do sprite
+  height: playerHeight,
+  spriteX0: 0,
   spriteY0: 0,
-  spriteWidth: 220, // Tamanho do sprite
+  spriteWidth: 220,
   spriteHeight: 270,
-  instance: null, // guardará a classe do player
+  instance: null, // will store player instance
 };
