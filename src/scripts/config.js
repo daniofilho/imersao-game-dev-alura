@@ -7,14 +7,17 @@ var gameConfig = {
 };
 
 var scenario = {
-  imageFile: 'assets/imagens/cenario/floresta.png',
-  soundFile: 'assets/sons/trilha_jogo.mp3',
+  imageFile:
+    'https://raw.githubusercontent.com/daniofilho/imersao-game-dev-alura-aula01/master/src/assets/imagens/cenario/floresta.png',
+  soundFile:
+    'https://raw.githubusercontent.com/daniofilho/imersao-game-dev-alura-aula01/master/src/assets/sons/trilha_jogo.mp3',
   instance: null, // will store scenario instance
 };
 
 const playerHeight = 135;
 var player = {
-  imageFile: 'assets/imagens/personagem/correndo.png',
+  imageFile:
+    'https://raw.githubusercontent.com/daniofilho/imersao-game-dev-alura-aula01/master/src/assets/imagens/personagem/correndo.png',
   imageFileWidth: 880,
   imageFileHeight: 1080,
   x: 20,
