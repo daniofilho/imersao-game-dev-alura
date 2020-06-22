@@ -4,7 +4,7 @@ This is the story of a witch named Hysta searching for her missing cat.
 
 ## Online Demo
 
-(DEMO)[#!]
+[DEMO](#!)
 
 ## Development usage
 
