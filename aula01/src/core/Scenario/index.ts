@@ -1,6 +1,11 @@
-import { game as gameConfig } from '~/config';
+// @ts-ignore
+import p5 from 'p5';
 
-export default function Scenario(props, p5) {
+import { game as gameConfig } from '../../config';
+
+import { scenarioType } from '../../types';
+
+export default function Scenario(props: scenarioType, p5: p5) {
   // First image starts at position 0
   let bg01_x = 0;
   // Second image start at -100%, so images will be side by side

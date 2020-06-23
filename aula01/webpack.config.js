@@ -42,8 +42,9 @@ module.exports = () => ({
   // This makes root import possible
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
-    alias: {
+    modules: [path.resolve('./node_modules'), path.resolve('./src')],
+    /*alias: {
       '~': path.resolve('./src'),
-    },
+    },*/
   },
 });

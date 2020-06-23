@@ -1,6 +1,11 @@
-import Sprite from '~/lib/Sprite';
+// @ts-ignore
+import p5 from 'p5';
 
-export default function Player(props, p5) {
+import Sprite from '../../lib/Sprite';
+
+import { playerType } from '../../types';
+
+export default function Player(props: playerType, p5: p5) {
   const {
     image: playerImage,
     config: { x, y, width, height, spriteWidth, spriteHeight, imageFileWidth, imageFileHeight },

@@ -1,4 +1,6 @@
-export default function Sprite(w, h, kW, kH) {
+import { objFrameType } from './types';
+
+export default function Sprite(w: number, h: number, kW: number, kH: number) {
   // Size of image sprite
   let width = w;
   let height = h;
@@ -12,13 +14,13 @@ export default function Sprite(w, h, kW, kH) {
   let rows = Math.ceil(height / keyHeight);
 
   // The frames
-  let framesObj = {};
+  let framesObj: any = {};
 
   // Get frame quantity
   const getFramesQuantity = () => {
-    const count = (obj) => {
-      var size = 0,
-        key;
+    const count = (obj: objFrameType) => {
+      let size = 0;
+      let key: any;
       for (key in obj) {
         if (obj.hasOwnProperty(key)) size++;
       }
@@ -28,7 +30,7 @@ export default function Sprite(w, h, kW, kH) {
   };
 
   // Get frame props
-  const getFrame = (num) => {
+  const getFrame = (num: number) => {
     return {
       x: framesObj[num - 1].x,
       y: framesObj[num - 1].y,
