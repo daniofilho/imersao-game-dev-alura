@@ -9,3 +9,7 @@ This is a game about a witch named Hysta searching for her missing cat Teko.
 `yarn` to install dependencies.
 
 `yarn start` to start a local server;
+
+---
+
+Webpack and P5 configuration reference: [@rubenspgcavalcante](https://github.com/rubenspgcavalcante/gamedev)
