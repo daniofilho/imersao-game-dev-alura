@@ -1,6 +1,5 @@
-// @ts-ignore
-import p5 from 'p5';
-//import 'p5/lib/addons/p5.sound';
+import * as p5 from 'p5';
+import 'p5/lib/addons/p5.sound'; // only works on p5 version "^0.9.0" - DONT'T UPDATE UNTIL A FIX IS RELEASED
 
 import Scenario from './core/Scenario';
 import Player from './core/Player';
@@ -24,7 +23,7 @@ function run(p5: p5) {
     // Scenario
     scenario.image = p5.loadImage(scenario.config.imageFile);
     // @ts-ignore - @TODO: find out why TS can't find type of loadSound
-    //scenario.sound = p5.loadSound(scenario.config.soundFile);
+    scenario.sound = p5.loadSound(scenario.config.soundFile);
 
     // Player
     player.image = p5.loadImage(player.config.imageFile);
@@ -54,5 +53,4 @@ function run(p5: p5) {
     player.instance.render();
   };
 }
-
 new p5(run);

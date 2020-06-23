@@ -1,9 +1,9 @@
 import { gameConfigType, scenarioConfigType, playerConfigType } from './types';
 
-import scenarioImage from 'assets/images/scenario/wood.png';
-import soundtrack from 'assets/sounds/soundtrack.mp3';
+import scenarioImage from './assets/images/scenario/wood.png';
+import soundtrack from './assets/sounds/soundtrack.mp3';
 
-import playerImage from 'assets/images/player/running.png';
+import playerImage from './assets/images/player/running.png';
 
 export const game: gameConfigType = {
   fps: 30,

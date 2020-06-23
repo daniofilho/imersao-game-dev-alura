@@ -12,7 +12,7 @@ export default function Scenario(props: scenarioType, p5: p5) {
   let bg02_x = p5.width; // canvas width
 
   // Soundtrack
-  //if (gameConfig.sound) props.sound.loop();
+  if (gameConfig.sound) props.sound.loop();
 
   // Move backgorund to have an inifinite background effect
   const animateBackground = () => {
