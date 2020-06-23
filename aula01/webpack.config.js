@@ -3,10 +3,14 @@ const path = require('path');
 
 module.exports = () => ({
   mode: process.env.NODE_ENV,
-  entry: './src/main.js',
+  entry: './src/main.ts',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
+  },
+  // opens Browser when load
+  devServer: {
+    open: true,
   },
   module: {
     rules: [
@@ -22,6 +26,11 @@ module.exports = () => ({
           },
         ],
       },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
@@ -32,8 +41,7 @@ module.exports = () => ({
   ],
   // This makes root import possible
   resolve: {
-    //modules: [path.resolve('./src'), path.resolve('./node_modules')],
-
+    extensions: ['.tsx', '.ts', '.js'],
     alias: {
       '~': path.resolve('./src'),
     },
