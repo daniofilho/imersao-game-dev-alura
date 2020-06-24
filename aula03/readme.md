@@ -1,4 +1,4 @@
-# Imersão Game Dev - Alura - Aula 02
+# Imersão Game Dev - Alura
 
 This is a game about a witch named Hysta searching for her missing cat Teko.
 
