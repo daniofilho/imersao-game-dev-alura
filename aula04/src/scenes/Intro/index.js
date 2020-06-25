@@ -11,8 +11,14 @@ function Intro(p5) {
     global.scene = 'level1';
     button.remove();
   };
-  let buttonBegin = new Button(p5, 'START', centerX - 150, centerY + 90, 'btn-begin', (button) =>
-    buttonBeginCallback(button)
+
+  let buttonBegin = new Button(
+    p5,
+    'START',
+    window.innerWidth / 2 - 40,
+    window.innerHeight / 2 + 120,
+    'btn-begin',
+    (button) => buttonBeginCallback(button)
   );
 
   const drawSlogan = () => {

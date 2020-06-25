@@ -20,7 +20,6 @@ function Item(props, p5) {
     },
   } = props;
 
-  // Enemies start on right side of screen and on ground
   const x0 = config.game.width - width - x + respawnDelay[0];
   const y0 = config.game.height - height - y;
 
@@ -63,7 +62,7 @@ function Item(props, p5) {
 
   const reset = () => {
     // Any y on screen
-    y = Math.floor(Math.random() * config.game.height) + 50;
+    y = Math.floor(Math.random() * config.game.height - y0) + 50;
 
     const random = Math.floor(Math.random() * respawnDelay[1]) + respawnDelay[0];
     x = config.game.width + random;

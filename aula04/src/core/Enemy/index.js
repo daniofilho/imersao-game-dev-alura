@@ -24,6 +24,8 @@ function Enemy(props, p5) {
   const x0 = config.game.width - width - x + respawnDelay[0];
   const y0 = config.game.height - height - y;
 
+  const speed0 = speed;
+
   x = x0;
   y = y0;
 
@@ -66,6 +68,8 @@ function Enemy(props, p5) {
 
     const random = Math.floor(Math.random() * respawnDelay[1]) + respawnDelay[0];
     x = config.game.width + random;
+
+    speed = speed0;
   };
 
   const getHitboxWidth = () => {
@@ -81,6 +85,7 @@ function Enemy(props, p5) {
 
   const move = () => {
     x = x - speed;
+    speed += 0.3;
   };
 
   const render = () => {

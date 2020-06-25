@@ -1,11 +1,24 @@
 html,
 body {
+  background: #000;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 body {
   opacity: 0;
+}
+
+#p5_loading {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  font-size: 20px;
+  font-family: 'Press Start 2P';
+  padding: 40px;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 img {

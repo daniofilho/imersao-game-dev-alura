@@ -4,7 +4,7 @@
 
 This is a game about guy lost in his nightmares looking for a way out.
 
-[DEMO](http://daniofilho.com.br/estudo/imersao-game-dev-alura/aula04/)
+[DEMO](https://daniofilho.com.br/estudo/imersao-game-dev-alura/aula04/)
 
 ## Engine features
 
