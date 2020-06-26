@@ -1,0 +1,63 @@
+html,
+body {
+  background: #000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  opacity: 0;
+}
+
+#p5_loading {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  font-size: 20px;
+  font-family: 'Press Start 2P';
+  padding: 40px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+img {
+  image-rendering: pixelated;
+}
+canvas {
+  image-rendering: optimizeSpeed; /* Older versions of FF          */
+  image-rendering: -moz-crisp-edges; /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast; /* Safari                        */
+  image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
+  image-rendering: pixelated; /* Awesome future-browsers       */
+  -ms-interpolation-mode: nearest-neighbor;
+
+  display: block;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.btn-begin {
+  position: fixed;
+  color: #ffffff;
+  background-color: #69217a;
+  border: 5px solid #000;
+  text-shadow: 2px 2px #000;
+  box-shadow: 1px 1px 1px 0px #000;
+  border-radius: 0;
+
+  font-family: 'Press Start 2P';
+  font-size: 14px;
+  padding: 5px 15px;
+  display: block;
+  line-height: 30px;
+  cursor: pointer;
+
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-begin:hover {
+  background-color: #32103b;
+}

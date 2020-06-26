@@ -2,7 +2,7 @@
 
 This is a game about a witch named Hysta searching for her missing cat Teko.
 
-[DEMO](http://daniofilho.com.br/estudo/imersao-game-dev-alura/aula03/)
+[DEMO](https://daniofilho.com.br/estudo/imersao-game-dev-alura/aula03/)
 
 ## Development usage
 
