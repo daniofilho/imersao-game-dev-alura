@@ -63,6 +63,9 @@ function Enemy(props, p5) {
     return y + height - hitboxHeight;
   };
 
+  const resetSpeed = () => {
+    speed = speed0;
+  };
   const reset = () => {
     y = y0;
 
@@ -117,6 +120,7 @@ function Enemy(props, p5) {
     getHitboxWidth,
     getHitboxHeight,
     reset,
+    resetSpeed,
     onCollide,
   };
 }

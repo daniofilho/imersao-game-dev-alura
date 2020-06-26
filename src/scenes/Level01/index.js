@@ -38,7 +38,10 @@ function Level1(p5) {
     coin.instance.reset();
     life.instance.reset();
     global.lifes = config.game.maxLifes;
-    enemies[scenario.actualEnemy].instance.reset();
+    enemies.map((enemy) => {
+      enemy.instance.resetSpeed();
+      enemy.instance.reset();
+    });
     p5.loop();
   };
 
